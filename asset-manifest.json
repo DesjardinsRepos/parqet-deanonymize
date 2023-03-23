@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/parqet-deanonymize/static/css/main.e6c13ad2.css",
-    "main.js": "/parqet-deanonymize/static/js/main.561051cb.js",
+    "main.js": "/parqet-deanonymize/static/js/main.7610a262.js",
     "static/js/787.af6884d2.chunk.js": "/parqet-deanonymize/static/js/787.af6884d2.chunk.js",
     "index.html": "/parqet-deanonymize/index.html",
     "main.e6c13ad2.css.map": "/parqet-deanonymize/static/css/main.e6c13ad2.css.map",
-    "main.561051cb.js.map": "/parqet-deanonymize/static/js/main.561051cb.js.map",
+    "main.7610a262.js.map": "/parqet-deanonymize/static/js/main.7610a262.js.map",
     "787.af6884d2.chunk.js.map": "/parqet-deanonymize/static/js/787.af6884d2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.561051cb.js"
+    "static/js/main.7610a262.js"
   ]
 }
