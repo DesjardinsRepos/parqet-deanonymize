@@ -1,0 +1,43 @@
+ self.onmessage = e => {
+		      		d = e.data;
+
+
+					const countDecimalPlaces = num => {
+					  let str = num.toString();
+					  let decimalPosition = str.indexOf('.');
+					  
+					  return decimalPosition === -1 ? 0 : str.length - decimalPosition - 1;
+					}
+
+					const round = (num, p) => {
+						dp = countDecimalPlaces(num);              // meh
+						return +num.toFixed(dp < p ? dp : p);
+					}
+
+
+
+
+		      		for(;;) {
+						// PriceA * A / AllocA = PriceB * B / AllocB
+						// A/B  = PriceB / PriceA * AllocA / AllocB (const)
+
+						ab = d[0].price / d[1].price * d[1].alloc / d[0].alloc; 
+												
+						// prüfe, wann A/B * n ganzzahl für n€N
+
+						ab = ab.toFixed(15)
+
+						for(j = 1;;) {
+							for(; j < 100000; j++) if(Number.isInteger(
+								round(ab*j, 5)											 /* muss ich noch testen */
+							)) break
+
+							// check rest of values
+							
+			      			if(true) break;
+		      			}
+		      			break;
+		      		}
+		      
+		      		self.postMessage(JSON.stringify({ value: j*d[0].price/d[0].alloc*100, d0amount: j, data: e.data }));
+		      }
